@@ -1,6 +1,6 @@
 package com.leetcode.a1480;
 
-public class Solution {
+public class Solution01 {
     
     /*解题思路：
      * 创建一个数组作为返回数组，长度与原数组相同
