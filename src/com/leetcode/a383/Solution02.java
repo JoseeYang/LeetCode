@@ -25,11 +25,13 @@ public class Solution02 {
         int[] arr = new int[26];
         int temp;
         
+//        遍历字符串，记录每个字符出现的频率存入数组中
         for (int i = 0; i < magazine.length(); i++) {
             temp = magazine.charAt(i) - 'a';
             arr[temp]++;
         }
         
+//        遍历字符串，看数组中对应地方是否满足，不满足返回False，全部满足返回Ture
         for (int i = 0; i < ransomNote.length(); i++) {
             temp = ransomNote.charAt(i) - 'a';
             if (arr[temp] > 0) {
